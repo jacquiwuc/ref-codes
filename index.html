@@ -3,68 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Save on international transfers with Wise. Get the real exchange rate and low fees. Use my invite link to get a free transfer!" />
-  <meta property="og:title" content="Wise Invite – Save on International Transfers" />
-  <meta property="og:description" content="Get a free transfer up to £500 when you join Wise using my invite link!" />
-  <meta property="og:url" content="https://wise.com/invite/ihpc/rongl128" />
-  <title>Wise Invite – Save Money on Transfers</title>
+  <title>Save More with Jacqui</title>
+  <meta name="description" content="Jacqui's favorite tools and referral codes to help you save money on transfers, utilities, and more." />
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 0 16px;
-      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background: #f7f9fc;
+      color: #333;
     }
     h1, h2 {
-      color: #0b6ef6;
+      color: #0077cc;
     }
-    a.button {
-      display: inline-block;
-      background-color: #0b6ef6;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 6px;
-      text-decoration: none;
+    .lang-toggle {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
       margin: 20px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .btn {
+      display: inline-block;
+      background: #0077cc;
+      color: white;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 10px;
     }
     .footer {
+      text-align: center;
       margin-top: 40px;
       font-size: 0.9em;
       color: #666;
-      text-align: center;
     }
   </style>
 </head>
 <body>
-
-  <h1>Save Money on International Transfers with Wise</h1>
-
-  <p>Looking for a cheaper way to send money abroad? With Wise, you get the real exchange rate, low transparent fees, and fast delivery.</p>
-
-  <h2>Why Choose Wise?</h2>
-  <ul>
-    <li>✅ Real exchange rate – no hidden markup</li>
-    <li>✅ Low and transparent fees</li>
-    <li>✅ Fast transfers – often within hours</li>
-    <li>✅ Trusted by millions worldwide</li>
-  </ul>
-
-  <h2>🎁 Get a Free Transfer!</h2>
-  <p>Use my invite link to sign up for Wise and get your first transfer up to <strong>£500 (or equivalent)</strong> free:</p>
-
-  <p><a class="button" href="https://wise.com/invite/ihpc/rongl128" target="_blank">Join Wise Now</a></p>
-
-  <h2>My Experience</h2>
-  <p>As a frequent international traveler and remote worker, I’ve saved hundreds using Wise instead of traditional banks. It’s fast, transparent, and incredibly easy to use.</p>
-
-  <h2>FAQ</h2>
-  <p><strong>Is Wise safe?</strong> – Yes, it’s regulated worldwide and trusted by millions.</p>
-  <p><strong>How long does a transfer take?</strong> – Often within hours. Some currencies take 1–2 days.</p>
-
-  <div class="footer">
-    © 2025 — Shared with ❤️ by a Wise user
+  <div class="lang-toggle">
+    <button onclick="setLang('en')">English</button> |
+    <button onclick="setLang('zh')">中文</button>
   </div>
 
+  <h1 id="title">Save More with Jacqui</h1>
+  <p id="intro">These are the tools I personally use and recommend. Use my invite links to get bonuses and save money!</p>
+
+  <div class="card">
+    <h3>Wise</h3>
+    <p class="en">Save money on international transfers with real exchange rates.</p>
+    <p class="zh" style="display:none">真实汇率、低手续费，最多可免费 900 纽币汇款额度，或免费办理实体卡。</p>
+    <p>✨ <strong>Free transfer limit up to NZ$900 or a free debit card</strong></p>
+    <a class="btn" href="https://wise.com/invite/dic/jiaqiw123" target="_blank">Join Wise</a>
+  </div>
+
+  <div class="card">
+    <h3>Powershop NZ</h3>
+    <p class="en">Switch to Powershop and get $150 credit for your electricity bill.</p>
+    <p class="zh" style="display:none">切换到 Powershop，可领取 150 纽币电力信用额，直接免费抵扣电费。</p>
+    <p>✨ <strong>Get NZ$150 free electricity credit</strong></p>
+    <a class="btn" href="https://secure.powershop.co.nz/r/jacquiw-6aCd6mG?p=1827" target="_blank">Join Powershop</a>
+  </div>
+
+  <div class="footer">
+    © 2025 Save More with Jacqui
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+      document.querySelectorAll('.zh').forEach(el => el.style.display = lang === 'zh' ? 'block' : 'none');
+      document.getElementById('title').innerText = lang === 'en' ? 'Save More with Jacqui' : '小吴的邀请码分享站';
+      document.getElementById('intro').innerText = lang === 'en'
+        ? 'These are the tools I personally use and recommend. Use my invite links to get bonuses and save money!'
+        : '这是我亲自体验并建议的应用，通过邀请链接注册可以领奖金、省钱！';
+    }
+  </script>
 </body>
 </html>
